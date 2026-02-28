@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, Mail, ArrowUpRight } from "lucide-react";
+import { Send, Mail, ArrowUpRight, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -40,22 +40,15 @@ export default function Contact() {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-violet-500/5 rounded-full blur-[60px]" />
 
           <div className="relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              {/* Get in Touch */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              {/* Email */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20 flex items-center justify-center">
                     <Mail size={18} className="text-blue-400" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white">
-                    Get In Touch
-                  </h3>
+                  <h3 className="text-lg font-semibold text-white">Email</h3>
                 </div>
-                <p className="text-sm text-white/40 leading-relaxed mb-6">
-                  Whether you&apos;re looking to build a new product, scale an
-                  existing one, or need expert consultation — we&apos;re here to
-                  help.
-                </p>
                 <div className="space-y-3">
                   <a
                     href="mailto:admin@velocitydigitallabs.com"
@@ -72,6 +65,34 @@ export default function Contact() {
                     support@velocitydigitallabs.com
                   </a>
                 </div>
+              </div>
+
+              {/* Phone & Address */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/20 flex items-center justify-center">
+                    <Phone size={18} className="text-violet-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white">Phone</h3>
+                </div>
+                <a
+                  href="tel:+13239784263"
+                  className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors mb-4"
+                >
+                  <Phone size={14} />
+                  +1 (323) 978-4263
+                </a>
+                <div className="flex items-center gap-3 mb-4 mt-6">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/20 flex items-center justify-center">
+                    <MapPin size={18} className="text-emerald-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white">Office</h3>
+                </div>
+                <p className="text-sm text-white/50 leading-relaxed">
+                  131 Continental Dr, Suite 305
+                  <br />
+                  Newark, DE 19713, USA
+                </p>
               </div>
 
               {/* Quick Links */}

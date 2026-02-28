@@ -47,10 +47,20 @@ export default function Footer() {
                 Velocity Digital Labs
               </span>
             </div>
-            <p className="text-xs text-white/30 leading-relaxed">
+            <p className="text-xs text-white/30 leading-relaxed mb-4">
               Building the future of digital — web development, AI automations,
               and digital marketing solutions.
             </p>
+            <div className="text-xs text-white/20 space-y-1">
+              <p>131 Continental Dr, Suite 305</p>
+              <p>Newark, DE 19713, USA</p>
+              <a
+                href="tel:+13239784263"
+                className="block hover:text-white/40 transition-colors"
+              >
+                +1 (323) 978-4263
+              </a>
+            </div>
           </div>
 
           {/* Products */}
@@ -118,12 +128,24 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/20">
-            &copy; {new Date().getFullYear()} Velocity Digital Labs LLC. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} Velocity Digital Labs, LLC. A
+            Delaware registered company. All rights reserved.
           </p>
-          <p className="text-xs text-white/20">
-            Built with Next.js & Tailwind CSS
-          </p>
+          <div className="flex items-center gap-4 text-xs text-white/20">
+            <a
+              href="mailto:admin@velocitydigitallabs.com"
+              className="hover:text-white/40 transition-colors"
+            >
+              admin@velocitydigitallabs.com
+            </a>
+            <span className="text-white/10">|</span>
+            <a
+              href="mailto:support@velocitydigitallabs.com"
+              className="hover:text-white/40 transition-colors"
+            >
+              support@velocitydigitallabs.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

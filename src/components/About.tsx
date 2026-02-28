@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Handshake, User, Building2, ExternalLink } from "lucide-react";
+import { Handshake, User, Building2, ExternalLink, MapPin, Phone, Calendar } from "lucide-react";
 
 export default function About() {
   return (
@@ -122,7 +122,46 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div>
+                <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
+                  <MapPin size={12} className="inline mr-1" />
+                  Registered Address
+                </h4>
+                <p className="text-sm text-white/50">
+                  131 Continental Dr, Suite 305
+                  <br />
+                  Newark, DE 19713
+                  <br />
+                  United States
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
+                  <Calendar size={12} className="inline mr-1" />
+                  Incorporated
+                </h4>
+                <p className="text-sm text-white/50">
+                  February 12, 2026
+                  <br />
+                  State of Delaware
+                  <br />
+                  File #10509590
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
+                  <Phone size={12} className="inline mr-1" />
+                  Contact
+                </h4>
+                <p className="text-sm text-white/50">
+                  +1 (323) 978-4263
+                  <br />
+                  admin@velocitydigitallabs.com
+                  <br />
+                  support@velocitydigitallabs.com
+                </p>
+              </div>
               <div>
                 <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
                   Focus Areas
@@ -130,24 +169,6 @@ export default function About() {
                 <p className="text-sm text-white/50">
                   Web Development, AI/ML Automations, Digital Marketing, SaaS
                   Products, Domain Investments
-                </p>
-              </div>
-              <div>
-                <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
-                  Products Launched
-                </h4>
-                <p className="text-sm text-white/50">
-                  VeloCards, VeloCalls, ClickzProtect, DevOS, JustAnalytics,
-                  VelocityPay, The Glassware Company
-                </p>
-              </div>
-              <div>
-                <h4 className="text-xs font-medium tracking-widest uppercase text-white/30 mb-2">
-                  Partnerships
-                </h4>
-                <p className="text-sm text-white/50">
-                  Digistreets Infocom Pvt Ltd — shared leadership and
-                  collaborative project delivery
                 </p>
               </div>
             </div>
