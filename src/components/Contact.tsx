@@ -58,11 +58,18 @@ export default function Contact() {
                 </p>
                 <div className="space-y-3">
                   <a
-                    href="mailto:hello@velocitydigitallabs.com"
+                    href="mailto:admin@velocitydigitallabs.com"
+                    className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors"
+                  >
+                    <Mail size={14} />
+                    admin@velocitydigitallabs.com
+                  </a>
+                  <a
+                    href="mailto:support@velocitydigitallabs.com"
                     className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors"
                   >
                     <Send size={14} />
-                    hello@velocitydigitallabs.com
+                    support@velocitydigitallabs.com
                   </a>
                 </div>
               </div>
@@ -112,7 +119,7 @@ export default function Contact() {
                 Ready to start building? Let&apos;s make it happen.
               </p>
               <a
-                href="mailto:hello@velocitydigitallabs.com"
+                href="mailto:admin@velocitydigitallabs.com"
                 className="group flex items-center gap-2 px-8 py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-medium text-sm hover:opacity-90 transition-all"
               >
                 Send us a message
